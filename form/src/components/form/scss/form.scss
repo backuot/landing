@@ -1,0 +1,44 @@
+.form {
+  width: 522px;
+  min-width: 450px;
+  padding-right: 121px;
+
+  @media only screen and (max-width : 1155px) {
+    padding-right: 0;
+  }
+
+  @media only screen and (max-width : 900px) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  &__title {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    padding-left: 25px;
+    font-weight: 300;
+    font-size: 19px;
+    color: #ff8a80;
+  }
+
+  &__submit {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    background-color: #ef5350;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    padding: 13px 31px 8px 34px;
+    border: 0;
+    float: right;
+  }
+
+  &__submit:hover {
+    background-color: #bc3e3c;
+  }
+
+  &__submit:active {
+    background-color: #7f2a28;
+  }
+}

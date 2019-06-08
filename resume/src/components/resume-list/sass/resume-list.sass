@@ -1,0 +1,59 @@
+.resume-list
+  background-size: contain
+  list-style-position: outside
+
+  &__item
+    position: relative
+    padding: 0 0 0 31px
+
+  &__item:before
+    position: absolute
+    width: 22px
+    height: 22px
+    border-radius: 50%
+    background: black
+    content: ""
+    left: 0
+    top: 8px
+
+  &__header_level1
+    font-family: "MyriadPro", "Arial", "sans-serif"
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 28px
+    padding-left: 16px
+
+  &__header_level2
+    font-family: "MyriadPro", "Arial", "sans-serif"
+    font-size: 28px
+    padding-left: 16px
+    font-weight: 400
+
+  &__header_level3
+    font-family: "MyriadPro", "Arial", "sans-serif"
+    text-transform: uppercase
+    display: block
+    font-size: 28px
+    padding-left: 14px
+    margin-top: 3px
+    font-weight: 400
+
+  &__content
+    font-family: "MyriadPro", "Arial", "sans-serif"
+    margin-top: 5px
+    margin-left: 16px
+    line-height: 1.3rem
+    font-size: 17px
+    font-weight: 400
+    margin-bottom: 14px
+
+.education > .resume-list
+  margin-left: 14px
+  margin-top: 26px
+
+  &__header_level1
+    color: #3d6cb0
+
+.experience > .resume-list
+  margin-left: 14px
+  margin-top: 43px

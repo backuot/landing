@@ -1,0 +1,45 @@
+.form-select {
+  font-family: "Montserrat", "Arial", "sans-serif";
+  background: white url('../img/drop-down-arrow.png');
+  background-repeat: no-repeat;
+  border: 2px solid #e3f2fd;
+  background-position: 93%;
+  padding: 0 20px 0 20px;
+  border-radius: 3px;
+  font-weight: 300;
+  height: 45px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+  &__selected {
+    height: 100%;
+    width: 100%;
+    color: #636363;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", "Arial", "sans-serif";
+    border: 2px solid #e3f2fd;
+    font-size: 16px;
+    color: #636363;
+    left: -2px;
+    font-weight: 300;
+    border-radius: 3px;
+    display: none;
+  }
+
+  &__list-item {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+  }
+
+  &__list-item:hover {
+    background-color: #EFF0EF;
+  }
+}

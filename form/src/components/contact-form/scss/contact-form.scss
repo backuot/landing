@@ -1,0 +1,86 @@
+.contact-form {
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  &__input-group {
+    display: flex;
+  }
+
+  &__input-group:nth-child(-n+2) {
+    margin: 0 0 3.2% 0;
+  }
+
+  &__input {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    border: 2px solid #e3f2fd;
+    padding: 0 20px 3px 20px;
+    font-weight: 300;
+    border-radius: 3px;
+    min-width: 150px;
+    font-size: 16px;
+    color: #636363;
+    height: 43px;
+    width: 100%;
+  }
+
+  &__input_first-name {
+    margin-right: 22px;
+  }
+
+  &__input_email {
+    margin-right: 22px;
+  }
+
+  &__input:focus::-webkit-input-placeholder,
+  &__textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &__input:focus::-moz-placeholder,
+  &__textarea:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  &__input:focus:-moz-placeholder,
+  &__textarea:focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  &__input:focus:-ms-input-placeholder,
+  &__textarea:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  &__input::-webkit-input-placeholder,
+  &__textarea::-webkit-input-placeholder {
+    color: #636363;
+  }
+
+  &__input::-moz-placeholder,
+  &__textarea::-moz-placeholder {
+    color: #000000;
+  }
+
+  &__input:-moz-placeholder,
+  &__textarea:-moz-placeholder {
+    color: #000000;
+  }
+
+  &__input:-ms-input-placeholder,
+  &__textarea:-ms-input-placeholder {
+    color: #636363;
+  }
+
+  &__textarea {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    border: 2px solid #e3f2fd;
+    padding: 12px 22px 0 22px;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #636363;
+    height: 83px;
+    resize: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+include ../resume-list/resume-list.pug
+include ../resume-head/resume-head.pug
+
+section.experience
+  +head('experience', './components/experience/img/experience-icon')
+  +list({
+    items: [{
+      header: {
+        level1: 'company name',
+        level2: '// Feb 2011 - Jun 2014',
+        level3: 'your job here'
+      },
+      content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. "
+        + "Aenean commodo ligula eget dolor. Aenean massa. "
+        + "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+        + "Donec quam felis, ultricies nec, pellentesque."
+    },
+    {
+      header: {
+        level1: 'company name',
+        level2: '// Feb 2011 - Jun 2014',
+        level3: 'your job here'
+      },
+      content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. "
+        + "Aenean commodo ligula eget dolor. Aenean massa. "
+        + "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+        + "Donec quam felis, ultricies nec, pellentesque."
+    },
+    {
+      header: {
+        level1: 'company name',
+        level2: '// Feb 2011 - Jun 2014',
+        level3: 'your job here'
+      },
+      content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. "
+        + "Aenean commodo ligula eget dolor. Aenean massa. "
+        + "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+        + "Donec quam felis, ultricies nec, pellentesque."
+    }]
+  })

@@ -1,0 +1,91 @@
+.content {
+  width: 100%;
+
+  &__quote-container,
+  &__form-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1366px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+
+    @media only screen and (max-width : 1155px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__quote {
+    background-color: #ef5350;
+    padding: 186px 0 130px 0;
+
+    @media only screen and (max-width : 900px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__form {
+    padding: 27px 0px 32px 0;
+
+    @media only screen and (max-width : 900px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    top: -121px;
+    left: 191px;
+    height: 814px;
+    width: 388px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width : 1335px) {
+      left: 120px;
+      top: -121px;
+    }
+
+    @media only screen and (max-width : 1275px) {
+      left: 60px;
+      top: -121px;
+    }
+
+    @media only screen and (max-width : 1220px) {
+      left: 5px;
+      top: -121px;
+    }
+
+    @media only screen and (max-width : 1155px) {
+      display: none;
+    }
+  }
+
+  &__greenline1 {
+    position: relative;
+    border-bottom: 84px solid #04e4a2;
+  	border-left: 48px solid transparent;
+  	border-right: 34px solid transparent;
+    width: 1082px;
+    top: 175px;
+    left: -571px;
+    transform: rotate(37.6deg);
+    z-index: -1;
+  }
+
+  &__greenline2 {
+    position: relative;
+    border-bottom: 84px solid #69f0ae;
+  	border-left: 48px solid transparent;
+  	border-right: 34px solid transparent;
+    width: 1250px;
+    top: 148px;
+    left: -710px;
+    transform: rotate(37.6deg);
+    z-index: -2;
+  }
+}

@@ -1,0 +1,9 @@
+div.contact-form
+  div.contact-form__input-group
+    input.contact-form__input.contact-form__input_first-name(type="text", placeholder="First Name" tabindex="1")
+    input.contact-form__input(type="text", placeholder="Last Name" tabindex="2")
+  div.contact-form__input-group
+    input.contact-form__input.contact-form__input_email(type="text", placeholder="Email Address" tabindex="3")
+    include ../form-select/form-select.pug
+  div.contact-form__input-group
+    textarea.contact-form__textarea(placeholder="Type your query here" tabindex="5")

@@ -1,0 +1,32 @@
+mixin createCircle(x)
+  - var x = x || 12;
+  - for (var i = 0; i < x; i++) {
+      div.skills__circle
+  - }
+
+mixin list
+  ul.skills__list
+    li.skills__list-item
+      div.skills__skill creative
+      div.skills__progress
+        +createCircle
+        div.skills__progress_status
+          +createCircle(9)
+    li.skills__list-item
+      div.skills__skill teamwork
+      div.skills__progress
+        +createCircle
+        div.skills__progress_status
+          +createCircle(11)
+    li.skills__list-item
+      div.skills__skill innovate
+      div.skills__progress
+        +createCircle
+        div.skills__progress_status
+          +createCircle(6)
+    li.skills__list-item
+      div.skills__skill communication
+      div.skills__progress
+        +createCircle
+        div.skills__progress_status
+          +createCircle(11)

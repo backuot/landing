@@ -1,0 +1,8 @@
+mixin list(content)
+  ul.resume-list
+    each item in content.items
+      li.resume-list__item
+        span.resume-list__header_level1=item.header.level1
+        span.resume-list__header_level2=item.header.level2
+        span.resume-list__header_level3=item.header.level3
+        p.resume-list__content=item.content

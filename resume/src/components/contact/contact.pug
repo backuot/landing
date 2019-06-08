@@ -1,0 +1,20 @@
+include ../resume-head/resume-head.pug
+
+section.contact
+  +head('contact', './components/contact/img/phone-icon')
+  ul.contact__list
+    li
+      ul.contact__column_left
+        li.contact__list-item address
+        li.contact__list-item e-mail
+        li.contact__list-item phone
+        li.contact__list-item website
+    li
+      ul.contact__column_right
+        li.contact__list-item Main Street, City.
+        li.contact__list-item
+          a.contact__list-item_link(href="mailto: contact@domain.com") contact@domain.com
+        li.contact__list-item
+          a.contact__list-item_link(href="tel: 555-555-555") 555-555-555
+        li.contact__list-item
+          a.contact__list-item_link(href="http://www.yourweb.com", target="_blank") www.yourweb.com

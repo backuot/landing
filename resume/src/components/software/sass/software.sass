@@ -1,0 +1,62 @@
+.software
+  width: 100%
+
+  &__list
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    margin-top: 30px
+    margin-left: 10px
+    padding-right: 5px
+    position: relative
+
+    @media only screen and (max-width : 945px)
+      justify-content: space-around
+    @media only screen and (max-width : 450px)
+      flex-flow: column
+
+  &__soft
+    margin-bottom: 12px
+    width: 44.4%
+    min-width: 200px
+    font-family: "MyriadPro", "Arial", "sans-serif"
+    font-size: 28px
+    text-transform: uppercase
+    font-weight: 400
+
+  &__list-item
+    margin-bottom: 25px
+    width: 44.4%
+
+    @media only screen and (max-width : 450px)
+      width: 100%
+
+  &__progress
+    background-color: #e6e6e6
+    height: 23px
+    width: 100%
+    z-index: 0
+
+  &__progress_status
+    position: absolute
+    background-color: #3d6cb0
+    height: 23px
+    z-index: 1
+
+  &__list-item:nth-child(1) &__progress_status
+    width: 39.9%
+
+  &__list-item:nth-child(2) &__progress_status
+    width: 36.7%
+
+  &__list-item:nth-child(3) &__progress_status
+    width: 31%
+
+  &__list-item:nth-child(4) &__progress_status
+    width: 27.3%
+
+  &__list-item:nth-child(5) &__progress_status
+    width: 24.6%
+
+  &__list-item:nth-child(6) &__progress_status
+    width: 40.1%

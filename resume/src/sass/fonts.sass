@@ -1,0 +1,14 @@
+@mixin font-face($fontFamily, $path, $fontWeight: normal, $fontStyle: normal)
+	@font-face
+		font-family: $fontFamily
+		src: url('#{$path}.eot')
+		src: url('#{$path}.eot?#iefix') format('embedded-opentype'),
+		url('#{$path}.woff') format('woff'),
+		url('#{$path}.ttf') format('truetype'),
+		url('#{$path}.svg##{$fontFamily}') format('svg')
+		font-weight: $fontWeight
+		font-style: $fontStyle
+
+@include font-face('MyriadPro', '../fonts/MyriadPro-Bold/MyriadPro-Bold', 700)
+@include font-face('MyriadPro', '../fonts/MyriadPro-Regular/MyriadPro-Regular', 400)
+@include font-face('MyriadPro', '../fonts/MyriadPro-LightSemiExt/MyriadPro-LightSemiExt', 500)
