@@ -4,7 +4,8 @@
 git clone and install dependencies
 
 ```
-$ git clone https://github.com/backuot/PageOfForm.git
+$ git clone https://github.com/backuot/landing.git
+$ cd /resume or /form
 $ npm install
 ```
 
